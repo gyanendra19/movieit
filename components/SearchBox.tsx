@@ -41,17 +41,17 @@ const SearchBox = () => {
 
     return (
         <>
-            <form onSubmit={handleSearch} className='flex gap-4' action="">
-                <input onChange={(e) => setMovie(e.target.value)} value={movie} className='w-[40%] h-[35px] focus:outline-none px-3 rounded-md' type="text" name='movie' />
+            <form onSubmit={handleSearch} className='flex md:flex-row flex-col gap-4' action="">
+                <input placeholder='Type a movie..' onChange={(e) => setMovie(e.target.value)} value={movie} className='md:w-[40%] w-10/12 md:m-0 mx-auto h-[35px] focus:outline-none px-3 rounded-md' type="text" name='movie' />
 
-                <select className='p-2 rounded-md focus:outline-none' onChange={(e) => setYear(e.target.value)} name="" id="">
+                <select className='p-2 w-fit md:m-0 mx-auto rounded-md focus:outline-none' onChange={(e) => setYear(e.target.value)} name="" id="">
                     <option value="2024">All year</option>
                     {filterYears.map(year => (
                         <option key={year} value={`${year}`}>{year}</option>
                     ))}
                 </select>
 
-                <select className='p-2 rounded-md focus:outline-none' onChange={(e) => setRating(e.target.value)} name="" id="">
+                <select className='p-2 w-fit md:m-0 mx-auto rounded-md focus:outline-none' onChange={(e) => setRating(e.target.value)} name="" id="">
                     <option value="0">All</option>
                     <option value="5">Greater than 5</option>
                     <option value="6">Greater than 6</option>
@@ -62,7 +62,7 @@ const SearchBox = () => {
 
 
 
-                <button type='submit' className='bg-white w-9 p-2 h-9 rounded-full'><RiSearchLine size={20} /></button>
+                <button type='submit' className='bg-white md:m-0 mx-auto md:w-9 p-2 h-9 rounded-full'><RiSearchLine size={20} /></button>
             </form>
         </>
     )

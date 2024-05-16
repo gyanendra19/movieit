@@ -4,14 +4,14 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer className='w-full relative bottom-0 px-6 bg-[#FCB7B7] mt-8 pt-10'>
-            <div className='flex gap-20'>
+            <div className='flex md:flex-row flex-col gap-20'>
 
                 <div className='basis-2/5'>
                     <Image src='/MOVIEIT.png' alt='logo' width={100} height={100} />
                     <p className='mt-4 w-[80%] text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, veniam perferendis iure!</p>
                 </div>
 
-                <div className='flex basis-3/5 justify-evenly text-white'>
+                <div className='flex md:flex-row flex-col gap-8 md:gap-0 basis-3/5 justify-evenly text-white'>
                     <div className='flex flex-col gap-3'>
                         <h3 className='font-bold'>ABOUT</h3>
                         <p>How it works</p>
