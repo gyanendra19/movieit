@@ -14,7 +14,7 @@ const MovieDetails = ({ movie, open, id, setIsOpen }: Props) => {
   return (
     <>
       {open && id === movie._id && (
-        <div className='w-[30%] h-[85%] z-[1000] middle fixed top-1/2 left-1/2 overflow-hidden flex flex-col bg-white rounded-md'>
+        <div className='md:w-[30%] w-11/12 h-[85%] z-[1000] middle fixed top-1/2 left-1/2 overflow-hidden flex flex-col bg-white rounded-md'>
           <img className='w-full h-[40%]' src={`${movie.backdrop_path}`} alt="" />
           <div className='overflow-y-scroll scroll-hide py-4'>
             <h2 className='text-xl font-semibold mt-1 text-center'>{movie.original_title}</h2>

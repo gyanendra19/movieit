@@ -19,8 +19,8 @@ const MovieCard = ({movie}: Props) => {
 
   return (
     <>
-    <section className=''>
-        <Image onClick={() => handleImageClick()} className='rounded-md' src={`${movie.poster_path}`} alt='poster' width={200} height={100}/>
+    <section className='w-full'>
+        <Image onClick={() => handleImageClick()} className='rounded-md mx-auto' src={`${movie.poster_path}`} alt='poster' width={200} height={100}/>
     </section>
     {isOpen && (
       <div onClick={() => setIsOpen(false)} className='absolute bg-black w-full h-full opacity-40 top-0 left-0 z-[500]'></div>
