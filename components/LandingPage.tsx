@@ -16,7 +16,7 @@ const LandingPage = (props: Props) => {
                         </div>
                     </div>
                     <p className="z-10 relative md:w-[65%] w-full font-medium text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore in cumque nisi sit quis.</p>
-                    <a href='#movie' className="px-4 py-2 md:w-[12%] relative z-10 bg-[#1BA4F1] rounded-lg text-white font-medium">CHECK</a>
+                    <a href='#movie' className="px-4 py-2 text-center md:w-[12%] relative z-10 bg-[#1BA4F1] rounded-lg text-white font-medium">CHECK</a>
                 </div>
 
                 <div className="relative">
