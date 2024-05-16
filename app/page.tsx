@@ -43,7 +43,7 @@ export default async function Home({ searchParams }: HomeProps) {
 
       <LandingPage />
 
-      <div className="w-10/12 mx-auto">
+      <div id='movie' className="w-10/12 mx-auto">
         <SearchBox />
       </div>
 
